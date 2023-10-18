@@ -16,7 +16,6 @@ model = tf.keras.Sequential([
     tf.keras.layers.Dense(32, activation='relu'),
     tf.keras.layers.Dense(1)
 ])
-
 model.compile(loss='mean_squared_error', optimizer='adam')
 
 # train the model
