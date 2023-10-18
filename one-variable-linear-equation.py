@@ -8,7 +8,7 @@ X = np.array(x_values_list)
 # list 2 (Y-values, corresponding to the function f(x))
 # f(x) = 2x + 3
 y_values_list = [2*x + 3 for x in x_values_list]
-y = np.array(y_values_list)
+Y = np.array(y_values_list)
 
 # build and compile model
 model = tf.keras.Sequential([
@@ -20,7 +20,7 @@ model = tf.keras.Sequential([
 model.compile(loss='mean_squared_error', optimizer='adam')
 
 # train the model
-model.fit(X, y, epochs=100, batch_size=64, validation_split=0.2)
+model.fit(X, Y, epochs=50, batch_size=64, validation_split=0.2)
 
 print("--Training Complete--")
 
