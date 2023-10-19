@@ -1,11 +1,11 @@
 import numpy as np
 import tensorflow as tf
 
-# list 1 (X-values)
+# input list (X-values)
 x_values_list = [i for i in range(1, 100_000)]
 X = np.array(x_values_list)
 
-# list 2 (Y-values, corresponding to the function f(x))
+# output/answers list (Y-values, corresponding to the function f(x))
 # f(x) = 2x + 3
 y_values_list = [2*x + 3 for x in x_values_list]
 Y = np.array(y_values_list)
