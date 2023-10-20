@@ -19,7 +19,7 @@ model = tf.keras.Sequential([
 model.compile(loss='mean_squared_error', optimizer='adam')
 
 # train the model
-model.fit(X, Y, epochs=75, batch_size=64, validation_split=0.2)
+model.fit(X, Y, epochs=50, batch_size=64, validation_split=0.2)
 
 print("--Training Complete--")
 
