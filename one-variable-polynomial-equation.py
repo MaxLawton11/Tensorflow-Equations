@@ -25,5 +25,5 @@ print("--Training Complete--")
 
 # make predictions
 while True: 
-	guess = float(input(" f(x)=2x+3 >> "))
+	guess = float(input(" f(x)=(x^2)+2x+3 >> "))
 	print( model.predict(np.array([guess])) )
