@@ -7,7 +7,7 @@ X = np.array(x_values_list)
 
 # output/answers list (Y-values, corresponding to the function f(x))
 # f(x) = (x^2)+2x+3
-y_values_list = [(x^2)+2x+ 3 for x in x_values_list]
+y_values_list = [(x^2) + 2*x + 3 for x in x_values_list]
 Y = np.array(y_values_list)
 
 # build and compile model
