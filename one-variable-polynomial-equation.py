@@ -26,4 +26,7 @@ print("--Training Complete--")
 # make predictions
 while True: 
 	guess = float(input(" f(x)=(x^2)+2x+3 >> "))
-	print( model.predict(np.array([guess])) )
+	model_guess = float(model.predict(np.array([guess]))[0][0])
+	real_answer = (guess^2)+2*guess+3
+	print("Model Guess:", model_guess )
+	print("Real Answer:", real_answer, "( "+ str(round((model_guess/real_answer)*100,3)) +"% )" )
