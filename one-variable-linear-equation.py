@@ -29,4 +29,4 @@ while True:
 	model_guess = float(model.predict(np.array([guess]))[0][0])
 	real_answer = (2*guess + 3)
 	print("Model Guess:", model_guess )
-	print("Real Answer:", real_answer, "( "+str((model_guess/real_answer)*100)+"% )" )
+	print("Real Answer:", real_answer, "( "+ str(round((model_guess/real_answer)*100),2) +"% )" )
