@@ -26,4 +26,7 @@ print("--Training Complete--")
 # make predictions
 while True: 
 	guess = float(input(" f(x)=2x+3 >> "))
-	print( model.predict(np.array([guess])) )
+	model_guess = model.predict(np.array([guess]))
+	real_answer = (2*guess + 3)
+	print("Model Guess:", model_guess )
+	print("Real Answer:", real_answer, str((model_guess/real_answer)*10)+"%" )
