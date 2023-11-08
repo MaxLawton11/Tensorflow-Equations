@@ -6,7 +6,7 @@ x_values_list = [i for i in range(1, 100_000)]
 X = np.array(x_values_list)
 
 # output/answers list (Y-values, corresponding to the function f(x))
-function = lambda x: (x^2) + 2*x + 3 # f(x) = (x^2)+2x+3
+function = lambda x: (x^2)+(2*x)+3 # f(x) = (x^2)+2x+3
 y_values_list = [function(x) for x in x_values_list]
 Y = np.array(y_values_list)
 
